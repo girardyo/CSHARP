@@ -33,9 +33,8 @@ namespace Venezia.Areas.Identity.Pages.Account.Manage
 
         public class InputModel
         {
-            [Phone]
-            [Display(Name = "Phone number")]
-            public string PhoneNumber { get; set; }
+            public string Firstname { get; set; }
+            public string Lastname { get; set; }
         }
 
         private async Task LoadAsync(User user)
@@ -47,7 +46,8 @@ namespace Venezia.Areas.Identity.Pages.Account.Manage
 
             Input = new InputModel
             {
-                PhoneNumber = phoneNumber
+                Firstname = user.Firstname,
+                Lastname = user.Lastname
             };
         }
 
@@ -77,16 +77,15 @@ namespace Venezia.Areas.Identity.Pages.Account.Manage
                 return Page();
             }
 
-            var phoneNumber = await _userManager.GetPhoneNumberAsync(user);
-            if (Input.PhoneNumber != phoneNumber)
+            if (Input.Firstname != user.Firstname)
             {
-                var setPhoneResult = await _userManager.SetPhoneNumberAsync(user, Input.PhoneNumber);
-                if (!setPhoneResult.Succeeded)
-                {
-                    StatusMessage = "Unexpected error when trying to set phone number.";
-                    return RedirectToPage();
-                }
+                Input.Firstname = user.Firstname;
             }
+            if (Input.Lastname != user.Lastname)
+            {
+                Input.Lastname = user.Lastname;
+            }
+            await _userManager.UpdateAsync(user);
 
             await _signInManager.RefreshSignInAsync(user);
             StatusMessage = "Your profile has been updated";

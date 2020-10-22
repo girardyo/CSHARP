@@ -10,6 +10,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Venezia.Data;
+using Venezia.Models;
 
 namespace Venezia
 {
@@ -28,7 +29,12 @@ namespace Venezia
         {
             services.AddControllersWithViews();
 
+            services.AddRazorPages();
+
             services.AddSession();
+
+            services.AddDefaultIdentity<User>(options => options.SignIn.RequireConfirmedAccount = true)
+        .AddEntityFrameworkStores<VeneziaContext>();
 
             services.AddDbContext<VeneziaContext>(options => options
                     .UseLoggerFactory(VeneziaContext.SqlLogger)
@@ -48,11 +54,14 @@ namespace Venezia
             app.UseRouting();
             app.UseSession();
             app.UseAuthentication();
+            app.UseAuthorization();
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
                     name:"default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
+
+                endpoints.MapRazorPages();
             });
         }
     }
