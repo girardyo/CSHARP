@@ -47,7 +47,7 @@ namespace Venezia
             
             app.UseRouting();
             app.UseSession();
-
+            app.UseAuthentication();
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(

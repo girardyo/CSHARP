@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Logging.Console;
@@ -9,7 +10,7 @@ using Venezia.Models;
 
 namespace Venezia.Data
 {
-    public class VeneziaContext : DbContext
+    public class VeneziaContext : IdentityDbContext<User>
     {
         public static readonly ILoggerFactory SqlLogger = LoggerFactory.Create(builder => { builder.AddConsole(); });
 
