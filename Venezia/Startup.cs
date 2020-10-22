@@ -13,6 +13,7 @@ using Venezia.Data;
 using Venezia.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Infrastructure;
+using Microsoft.AspNetCore.Identity;
 
 namespace Venezia
 {
@@ -40,7 +41,9 @@ namespace Venezia
 
 
             services.AddDefaultIdentity<User>(options => options.SignIn.RequireConfirmedAccount = true)
-        .AddEntityFrameworkStores<VeneziaContext>();
+                .AddEntityFrameworkStores<VeneziaContext>()
+;
+
 
             services.AddDbContext<VeneziaContext>(options => options
                     .UseLoggerFactory(VeneziaContext.SqlLogger)
@@ -83,9 +86,13 @@ namespace Venezia
                 endpoints.MapControllerRoute(
                     name:"default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
-
+                endpoints.MapControllerRoute(
+                   name: "areas",
+                   pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}"
+                 );
                 endpoints.MapRazorPages();
             });
+
         }
     }
 }

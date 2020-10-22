@@ -34,10 +34,12 @@ namespace Venezia.Utils
         public override async Task ProcessAsync(TagHelperContext context, TagHelperOutput output)
         {
 
+
             var user = _accessor.ActionContext.HttpContext.User;
             var uid = _userManager.GetUserId(user);
             var name = _userManager.FindByIdAsync(uid).Result.Firstname;
             output.PreContent.SetHtmlContent("<strong>");
+
             output.Content.SetContent(name);
             output.PostContent.SetHtmlContent("</strong>");
 

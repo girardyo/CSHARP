@@ -439,3 +439,5 @@ C:\Users\Géraldine\Desktop\CSHARP\Venezia\bin\Debug\netcoreapp3.1\Newtonsoft.Js
 C:\Users\Géraldine\Desktop\CSHARP\Venezia\obj\Debug\netcoreapp3.1\Venezia.csproj.CoreCompileInputs.cache
 C:\Users\Géraldine\Desktop\CSHARP\Venezia\obj\Debug\netcoreapp3.1\Venezia.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Géraldine\Desktop\CSHARP\Venezia\obj\Debug\netcoreapp3.1\Venezia.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Géraldine\Desktop\CSHARP\Venezia\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Create.cshtml.g.cs
+C:\Users\Géraldine\Desktop\CSHARP\Venezia\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Index.cshtml.g.cs
