@@ -12,6 +12,7 @@ using Microsoft.EntityFrameworkCore;
 using Venezia.Data;
 using Venezia.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Infrastructure;
 
 namespace Venezia
 {
@@ -33,6 +34,10 @@ namespace Venezia
             services.AddRazorPages();
 
             services.AddSession();
+            services.AddHttpContextAccessor();
+
+            services.AddSingleton<IActionContextAccessor, ActionContextAccessor>();
+
 
             services.AddDefaultIdentity<User>(options => options.SignIn.RequireConfirmedAccount = true)
         .AddEntityFrameworkStores<VeneziaContext>();

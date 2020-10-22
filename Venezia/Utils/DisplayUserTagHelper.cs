@@ -1,5 +1,7 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Infrastructure;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Razor.TagHelpers;
 using System;
@@ -13,11 +15,32 @@ using Venezia.Models;
 
 namespace Venezia.Utils
 {
+
+
+
+
     public class DisplayUserTagHelper : TagHelper
     {
-        public override void Process(TagHelperContext context, TagHelperOutput output)
+
+        private readonly UserManager<User> _userManager;
+        private readonly IActionContextAccessor _accessor;
+
+        public DisplayUserTagHelper(UserManager<User> userManager, IActionContextAccessor accessor)
         {
-            output.Content.Clear();
+            _userManager = userManager;
+            _accessor = accessor;
+        }
+
+        public override async Task ProcessAsync(TagHelperContext context, TagHelperOutput output)
+        {
+
+            var user = _accessor.ActionContext.HttpContext.User;
+            var uid = _userManager.GetUserId(user);
+            var name = _userManager.FindByIdAsync(uid).Result.Firstname;
+            output.PreContent.SetHtmlContent("<strong>");
+            output.Content.SetContent(name);
+            output.PostContent.SetHtmlContent("</strong>");
+
         }
 
     }
