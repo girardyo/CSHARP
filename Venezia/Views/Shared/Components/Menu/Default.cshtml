@@ -3,7 +3,9 @@
     <nav class="my-2 my-md-0 mr-md-3">
         <a class="p-2 text-dark" href="~/">Accueil</a>
         <a class="p-2 text-dark" asp-controller="Cars" asp-action="Index">Voitures</a>
-        <a class="p-2 text-dark" asp-controller="Cars" asp-action="Create">Ajouter</a>
+        <Authorized>
+            <a class="p-2 text-dark" asp-controller="Cars" asp-action="Create">Ajouter</a>
+        </Authorized>
         <a class="p-2 text-dark" asp-controller="Fuels" asp-action="Index">Carburants</a>
         <a class="p-2 text-dark" asp-route="BasketUrl">Mon panier</a>
         <a class="p-2 text-dark" asp-route="RouteAbout">A propos</a>

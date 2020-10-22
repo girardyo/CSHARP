@@ -387,9 +387,6 @@ C:\Users\Géraldine\Desktop\CSHARP\Venezia\bin\Debug\netcoreapp3.1\Microsoft.Asp
 C:\Users\Géraldine\Desktop\CSHARP\Venezia\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 C:\Users\Géraldine\Desktop\CSHARP\Venezia\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Core.dll
 C:\Users\Géraldine\Desktop\CSHARP\Venezia\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Stores.dll
-C:\Users\Géraldine\Desktop\CSHARP\Venezia\obj\Debug\netcoreapp3.1\Venezia.csproj.CoreCompileInputs.cache
-C:\Users\Géraldine\Desktop\CSHARP\Venezia\obj\Debug\netcoreapp3.1\Venezia.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\Géraldine\Desktop\CSHARP\Venezia\obj\Debug\netcoreapp3.1\Venezia.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Géraldine\Desktop\CSHARP\Venezia\bin\Debug\netcoreapp3.1\Venezia.StaticWebAssets.xml
 C:\Users\Géraldine\Desktop\CSHARP\Venezia\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.UI.Views.V3.dll
 C:\Users\Géraldine\Desktop\CSHARP\Venezia\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.UI.Views.V4.dll
@@ -436,3 +433,9 @@ C:\Users\Géraldine\Desktop\CSHARP\Venezia\obj\Debug\netcoreapp3.1\Razor\Areas\I
 C:\Users\Géraldine\Desktop\CSHARP\Venezia\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
 C:\Users\Géraldine\Desktop\CSHARP\Venezia\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
 C:\Users\Géraldine\Desktop\CSHARP\Venezia\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_LoginPartial.cshtml.g.cs
+C:\Users\Géraldine\Desktop\CSHARP\Venezia\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\Géraldine\Desktop\CSHARP\Venezia\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.Razor.Extensions.dll
+C:\Users\Géraldine\Desktop\CSHARP\Venezia\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
+C:\Users\Géraldine\Desktop\CSHARP\Venezia\obj\Debug\netcoreapp3.1\Venezia.csproj.CoreCompileInputs.cache
+C:\Users\Géraldine\Desktop\CSHARP\Venezia\obj\Debug\netcoreapp3.1\Venezia.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Géraldine\Desktop\CSHARP\Venezia\obj\Debug\netcoreapp3.1\Venezia.MvcApplicationPartsAssemblyInfo.cache
