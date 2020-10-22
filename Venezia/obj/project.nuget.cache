@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "FRYhZFlsX62TjokVSS/kFbSODOXDDONUoupOuvqulnU5ZJI3sJ6nuwLoKFSS7Qvt6cZ6DvPvzlMrJYZ8rnB/zw==",
+  "dgSpecHash": "hgAH6zArxkFbQpzcLqJ418myDrCjEdYLruo6InkYZ4qap7x9UfE6CUa5Mx3dhGcT5ZvPjnEjNQsxGzh1t7XS3g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Géraldine\\Desktop\\csharpav-master\\csharpdev\\Venezia\\Venezia.csproj",
+  "projectFilePath": "C:\\Users\\Géraldine\\Desktop\\CSHARP\\Venezia\\Venezia.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Géraldine\\.nuget\\packages\\buildbundlerminifier\\3.2.449\\buildbundlerminifier.3.2.449.nupkg.sha512",
     "C:\\Users\\Géraldine\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",

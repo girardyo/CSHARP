@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Géraldine\\Desktop\\csharpav-master\\csharpdev\\Venezia\\Venezia.csproj": {}
+    "C:\\Users\\Géraldine\\Desktop\\CSHARP\\Venezia\\Venezia.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Géraldine\\Desktop\\csharpav-master\\csharpdev\\Venezia\\Venezia.csproj": {
+    "C:\\Users\\Géraldine\\Desktop\\CSHARP\\Venezia\\Venezia.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Géraldine\\Desktop\\csharpav-master\\csharpdev\\Venezia\\Venezia.csproj",
+        "projectUniqueName": "C:\\Users\\Géraldine\\Desktop\\CSHARP\\Venezia\\Venezia.csproj",
         "projectName": "Venezia",
-        "projectPath": "C:\\Users\\Géraldine\\Desktop\\csharpav-master\\csharpdev\\Venezia\\Venezia.csproj",
+        "projectPath": "C:\\Users\\Géraldine\\Desktop\\CSHARP\\Venezia\\Venezia.csproj",
         "packagesPath": "C:\\Users\\Géraldine\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Géraldine\\Desktop\\csharpav-master\\csharpdev\\Venezia\\obj\\",
+        "outputPath": "C:\\Users\\Géraldine\\Desktop\\CSHARP\\Venezia\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Géraldine\\AppData\\Roaming\\NuGet\\NuGet.Config",
